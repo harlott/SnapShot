@@ -13,7 +13,7 @@ const PhotoContextProvider = props => {
       )
       .then(response => {
         setImages(response.data.photos.photo);
-        setLoading(false);
+        setLoading(true);
       })
       .catch(error => {
         console.log(
